@@ -1,0 +1,11 @@
+[filter "lfs"]
+	smudge = git.lfs smudge -- %f
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = 
+	email = 
+[core]
+[mergetool "unityyamlmerge"]
+	trustExitCode = false
+	cmd = 'C:/Archivos de Programa/Unity/Hub/Editor/2021.3.3f1/Editor/Data/Tools/UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
